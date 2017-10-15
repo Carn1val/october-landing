@@ -30,14 +30,14 @@ gulp.task('templates:compile', function buildHTML() {
 // Styles compile
 gulp.task('styles:compile', function() {
   return gulp.src('source/styles/main.scss')
-  .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-  .pipe(rename('main.min.css'))
-  .pipe(gulp.dest('build/css'));
+    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+    .pipe(rename('main.min.css'))
+    .pipe(gulp.dest('build/css'));
 });
 
 // Sprite
 gulp.task('sprite', function(cb) {
-  var spriteData = gulp.src('source/images/icons/*.png').pipe(spritesmith({
+  const spriteData = gulp.src('source/images/icons/*.png').pipe(spritesmith({
     imgName: 'sprite.png',
     imgPath: '../images/sprite.png',
     cssName: 'sprite.scss'
