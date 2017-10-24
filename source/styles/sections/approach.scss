@@ -1,23 +1,28 @@
 .approach {
   padding: 86px 0 94px;
+
   background-color: #f3f3f3;
 
   &__list {
     margin: 0;
     padding: 0;
+
     counter-reset: count;
   }
 
   &__item {
     margin-bottom: 40px;
+
+    color: #424242;
+
+    background: #ffffff;
     border-radius: 5px;
     box-shadow: -1px -1px 10px 1px rgba(214, 214, 214, 1);
-    color: #424242;
-    background: #fff;
 
     &:nth-child(even) {
       display: flex;
       flex-direction: row-reverse;
+
       text-align: right;
 
       .approach__text {
@@ -28,15 +33,16 @@
         right: auto;
         left: -52px;
       }
-
     }
   }
 
   &__image {
     position: relative;
+
+    display: inline-block;
     max-width: 340px;
     max-height: 236px;
-    display: inline-block;
+
     vertical-align: top;
   }
 
@@ -48,46 +54,54 @@
 
   &__text {
     display: inline-block;
-    vertical-align: top;
     width: 64%;
     padding: 70px 70px 55px 90px;
+
     font-size: 0.875rem;
+    vertical-align: top;
   }
 
   &__step {
-    @include centerer-y();
-
     right: -58px;
+
     width: 103px;
     height: 103px;
     padding-top: 10px;
-    border-radius: 5px;
-    border: 2px solid #fff;
-    text-align: center;
+
     font-size: 1.25rem;
+    text-align: center;
+    color: #ffffff;
+
     background-color: #de2b24;
-    color: #fff;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+
+    @include centerer-y();
 
     &:before {
       content: counter(count);
-      counter-increment: count;
+
       display: block;
-      font-family: $ff-steps;
+
       font-size: 3rem;
       line-height: 1;
-      color: #fff;
-    }
+      font-family: $ff-steps;
+      color: #ffffff;
 
+      counter-increment: count;
+    }
   }
 
   &__title {
     margin-bottom: 6px;
+
     font-size: 1.125rem;
     font-family: $ff-main-bold;
   }
 
   &__description {
     margin: 0;
+
     line-height: 1.5;
   }
 }

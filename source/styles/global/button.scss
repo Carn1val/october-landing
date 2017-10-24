@@ -1,9 +1,12 @@
 .button {
   display: inline-block;
-  border-radius: 3px;
   padding: 10px 22px 7px;
+
+  color: #ffffff;
   text-decoration: none;
-  color: #fff;
+
+  border-radius: 3px;
+
   transition: 0.3s;
 
   &--red {
@@ -12,7 +15,7 @@
       background: lighten(#de2b24, 7%);
     }
   }
-  
+
   &--yellow {
     background: #f8cd53;
     &:hover {

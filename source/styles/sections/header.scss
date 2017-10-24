@@ -5,8 +5,8 @@
   }
   &__bottom {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
     padding: 41px 0 32px;
   }
@@ -18,16 +18,19 @@
 
 .contact {
   display: inline-block;
-  vertical-align: top;
   padding: 10px 10px 8px;
+
+  vertical-align: top;
   color: #424242;
   text-decoration: none;
+
   transition: 0.3s;
   &:hover {
     color: lighten(#424242, 20%);
   }
   &__icon {
     margin-right: 7px;
+
     font-size: 1.5rem;
     vertical-align: middle;
     &-email {
@@ -40,6 +43,7 @@
   &:first-child {
     margin-right: 8px;
     padding-right: 18px;
+
     border-right: 1px solid #e2e2e2;
   }
 }
@@ -48,7 +52,9 @@
   display: inline-block;
   margin: 7px 0;
   padding: 5px 8px 1px;
-  border-radius: 3px;
+
+  color: #ffffff;
+
   background-color: #1287bf;
-  color: #fff;
+  border-radius: 3px;
 }

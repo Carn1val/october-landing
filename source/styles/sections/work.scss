@@ -1,11 +1,13 @@
 .work {
   padding: 110px 0;
+
+  color: #ffffff;
+
   background-color: #de2b24;
-  color: #fff;
 
   .title--with-bottom-line {
-    &:after{
-      background: #fff;
+    &:after {
+      background: #ffffff;
     }
   }
 
@@ -19,20 +21,24 @@
   &__item {
     width: 256px;
     height: 255px;
+
     font-weight: bold;
-    color: #fff;
+    color: #ffffff;
+
     background: #f35e59;
 
     &--name {
       position: relative;
+
       padding: 130px 40px 75px 40px;
+
       text-align: center;
 
       &:before {
-        @include sprite($work-item);
-        @include centerer-x();
-        content: '';
+        content: "";
         top: 74px;
+
+        @include sprite($work-item);@include centerer-x();
       }
     }
   }

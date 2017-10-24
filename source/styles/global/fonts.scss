@@ -1,31 +1,35 @@
 @font-face {
+  font-weight: bold;
   font-family: "georgia-bold";
+  font-style: normal;
+
   src: url("../fonts/georgia-bold.woff") format("woff"),
   url("../fonts/georgia-bold.woff2") format("woff2");
-  font-weight: bold;
-  font-style: normal;
 }
 
 @font-face {
+  font-weight: bold;
   font-family: "helvetica-neue-bold";
+  font-style: normal;
+
   src: url("../fonts/helvetica-neue-bold.woff") format("woff"),
   url("../fonts/helvetica-neue-bold.woff2") format("woff2");
-  font-weight: bold;
-  font-style: normal;
 }
 
 @font-face {
+  font-weight: normal;
   font-family: "helvetica-neue-light";
+  font-style: normal;
+
   src: url("../fonts/helvetica-neue-light.woff") format("woff"),
   url("../fonts/helvetica-neue-light.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
 }
 
 @font-face {
+  font-weight: normal;
   font-family: "helvetica-neue-regular";
+  font-style: normal;
+
   src: url("../fonts/helvetica-neue-regular.woff") format("woff"),
   url("../fonts/helvetica-neue-regular.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
 }
